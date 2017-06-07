@@ -153,6 +153,8 @@ on charger
     # Enable thermal
     write /sys/module/msm_thermal/core_control/enabled 1
 
+    setprop vendor.post_boot.parsed 1
+
     # Set perfd properties
     rm /data/system/perfd/default_values
     start perfd
