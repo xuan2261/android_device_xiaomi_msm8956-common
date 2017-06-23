@@ -24,6 +24,7 @@ voice.playback.conc.disabled=true
 voice.record.conc.disabled=false
 
 ro.config.vc_call_vol_steps=7
+ro.config.media_vol_steps=25
 
 # Bluetooth
 bluetooth.hfp.client=1
