@@ -132,7 +132,8 @@ PRODUCT_PACKAGES += \
 
 # DataServices
 PRODUCT_PACKAGES += \
-    librmnetctl
+    librmnetctl \
+    rild_socket
 
 # Display
 PRODUCT_PACKAGES += \
