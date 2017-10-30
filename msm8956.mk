@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8952 \
     hwcomposer.msm8952 \
     memtrack.msm8952 \
+    libgenlock \
     liboverlay
 
 # Doze mode
