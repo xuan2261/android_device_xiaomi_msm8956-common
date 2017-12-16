@@ -169,6 +169,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
