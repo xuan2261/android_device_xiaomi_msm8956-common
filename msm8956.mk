@@ -191,6 +191,10 @@ PRODUCT_PACKAGES += \
     sap.conf \
     xtwifi.conf
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
+
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
