@@ -211,6 +211,11 @@ BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib64/libril-qc-qmi-1.so|rild_socket.so \
+    /system/vendor/lib64/libizat_core.so|libshims_get_process_name.so
+
 # Wifi
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
 BOARD_HAS_QCOM_WLAN         := true
