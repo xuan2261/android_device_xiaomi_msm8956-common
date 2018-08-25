@@ -27,12 +27,11 @@ ro.config.vc_call_vol_steps=7
 ro.config.media_vol_steps=25
 
 # Bluetooth
-bluetooth.hfp.client=1
-qcom.bluetooth.soc=smd
-ro.btconfig.if=smd
-ro.btconfig.dev=/dev/smd3
-ro.btconfig.vendor=qcom
-ro.btconfig.chip=WCN3680
+vendor.qcom.bluetooth.soc=pronto
+ro.bluetooth.dun=true
+ro.bluetooth.hfp.ver=1.7
+ro.bluetooth.sap=true
+ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 media.camera.ts.monotonic=1

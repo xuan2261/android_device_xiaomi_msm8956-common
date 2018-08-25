@@ -303,7 +303,6 @@ on property:sys.boot_completed=1
     chown media audio /sys/kernel/wcd_cpe0/fw_name
 
 on property:vold.decrypt=trigger_restart_framework
-    start config_bluetooth
     start wcnss-service
     start config_bt_addr
 
@@ -349,11 +348,6 @@ service config_bt_addr /vendor/bin/btnvtool -O
     group bluetooth radio
     oneshot
 
-service config_bluetooth /system/vendor/bin/init.qcom.bt.sh "onboot"
-    class core
-    user root
-    oneshot
-
 service hciattach /system/vendor/bin/init.qcom.bt.sh
     class late_start
     user bluetooth
@@ -361,11 +355,11 @@ service hciattach /system/vendor/bin/init.qcom.bt.sh
     disabled
     oneshot
 
-on property:bluetooth.hciattach=true
+on property:vendor.bluetooth.hciattach=true
     start hciattach
 
-on property:bluetooth.hciattach=false
-    setprop bluetooth.status off
+on property:vendor.bluetooth.hciattach=false
+    setprop vendor.bluetooth.status off
 
 service qcom-sh /system/vendor/bin/init.qcom.sh
     class late_start
