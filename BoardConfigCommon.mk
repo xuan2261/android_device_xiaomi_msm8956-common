@@ -103,12 +103,6 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# MKHW
-BOARD_USES_MOKEE_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    hardware/mokee/mkhw \
-    $(VENDOR_PATH)/mkhw
-
 # CNE
 BOARD_USES_QCNE := true
 
@@ -183,6 +177,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
+
+# MKHW
+JAVA_SOURCE_OVERLAYS := org.mokee.hardware|$(VENDOR_PATH)/mkhw|**/*.java
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
