@@ -179,6 +179,9 @@ JAVA_SOURCE_OVERLAYS := org.mokee.hardware|$(VENDOR_PATH)/mkhw|**/*.java
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
