@@ -76,6 +76,9 @@ mmp.enable.3g2=true
 media.aac_51_output_enabled=true
 persist.media.treble_omx=false
 
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
+
 # NITZ
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
