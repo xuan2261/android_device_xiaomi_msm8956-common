@@ -141,7 +141,10 @@ on boot
     # LED
     chmod 0666 /sys/class/leds/led:torch_0/brightness
     chmod 0666 /sys/class/leds/led:torch_1/brightness
-    chmod 0666 /sys/class/leds/led:switch/brightness
+
+    # Torch
+    chown system system /sys/class/leds/flashlight/brightness
+    chmod 0666 /sys/class/leds/flashlight/brightness
 
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
