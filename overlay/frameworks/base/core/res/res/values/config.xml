@@ -335,4 +335,7 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
+
+    <!-- True if the firmware supports Wi-Fi link probing -->
+    <bool name="config_wifi_link_probing_supported">true</bool>
 </resources>
