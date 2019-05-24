@@ -295,6 +295,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.mokee.touch@1.0-service.xiaomi_msm8956
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.mokee.trust@1.0-service

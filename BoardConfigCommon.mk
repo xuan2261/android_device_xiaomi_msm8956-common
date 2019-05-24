@@ -169,9 +169,6 @@ TARGET_PROVIDES_KEYMASTER := true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
-# MKHW
-JAVA_SOURCE_OVERLAYS := org.mokee.hardware|$(VENDOR_PATH)/mkhw|**/*.java
-
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
