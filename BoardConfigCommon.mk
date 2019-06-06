@@ -103,11 +103,11 @@ TARGET_TS_MAKEUP := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# MKHW
+BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    $(VENDOR_PATH)/cmhw
+    hardware/mokee/mkhw \
+    $(VENDOR_PATH)/mkhw
 
 # CNE
 BOARD_USES_QCNE := true
