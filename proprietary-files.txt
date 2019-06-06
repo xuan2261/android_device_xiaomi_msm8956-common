@@ -1,5 +1,5 @@
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib/libadsp_default_listener.so
@@ -20,11 +20,11 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libscveTextReco_skel.so
 
 # Audio libraries
-lib/libDiracAPI_SHARED.so
-lib/soundfx/libdirac.so
+lib/libDiracAPI_SHARED.so:vendor/lib/libDiracAPI_SHARED.so
+lib/soundfx/libdirac.so:vendor/lib/soundfx/libdirac.so
 vendor/etc/diracmobile.config
 vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbloader.so|b1354718ee0a004d5bdac819fb16c25a0696551c
 vendor/lib64/libacdbmapper.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
@@ -32,7 +32,7 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libhwdaphal.so
 vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
+vendor/lib/libacdbloader.so|01f4b3ae5987b762050a43457da3c13b562b38e1
 vendor/lib/libacdbmapper.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
@@ -48,31 +48,29 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
-bin/btnvtool
-bin/hci_qcomm_init
-bin/wcnss_filter
+bin/btnvtool:vendor/bin/btnvtool
 vendor/lib64/libbtnv.so
 vendor/lib/libbtnv.so
 
 # Bluetooth firmware
-etc/firmware/nvm_tlv.bin
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/nvm_tlv_3.2.bin
-etc/firmware/rampatch_tlv.img
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/rampatch_tlv_3.2.tlv
+etc/firmware/nvm_tlv.bin:vendor/firmware/nvm_tlv.bin
+etc/firmware/nvm_tlv_1.3.bin:vendor/firmware/nvm_tlv_1.3.bin
+etc/firmware/nvm_tlv_2.1.bin:vendor/firmware/nvm_tlv_2.1.bin
+etc/firmware/nvm_tlv_3.0.bin:vendor/firmware/nvm_tlv_3.0.bin
+etc/firmware/nvm_tlv_3.2.bin:vendor/firmware/nvm_tlv_3.2.bin
+etc/firmware/rampatch_tlv.img:vendor/firmware/rampatch_tlv.img
+etc/firmware/rampatch_tlv_1.3.tlv:vendor/firmware/rampatch_tlv_1.3.tlv
+etc/firmware/rampatch_tlv_2.1.tlv:vendor/firmware/rampatch_tlv_2.1.tlv
+etc/firmware/rampatch_tlv_3.0.tlv:vendor/firmware/rampatch_tlv_3.0.tlv
+etc/firmware/rampatch_tlv_3.2.tlv:vendor/firmware/rampatch_tlv_3.2.tlv
 
 # Charger
-bin/hvdcp_opti
+bin/hvdcp_opti:vendor/bin/hvdcp_opti
 
 # CNE
-etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
-framework/com.quicinc.cne.api-V1.0-java.jar|6fb1bf2ea642ce0f0c8c4716639cab7a9810cc3e
-framework/com.quicinc.cne.jar|88fc21cd7dd69ae37607a9a671d4913d82c2e336
+etc/permissions/com.quicinc.cne.xml:vendor/etc/permissions/com.quicinc.cne.xml|bd1e5321176d9c10411a942743d976fb80418319
+framework/com.quicinc.cne.api-V1.0-java.jar:vendor/framework/com.quicinc.cne.api-V1.0-java.jar|6fb1bf2ea642ce0f0c8c4716639cab7a9810cc3e
+framework/com.quicinc.cne.jar:vendor/framework/com.quicinc.cne.jar|88fc21cd7dd69ae37607a9a671d4913d82c2e336
 vendor/bin/cnd|fc7ad0d8041e35df029531ad6b5e972fdbfbfbc3
 -vendor/lib/com.quicinc.cne.api@1.0.so|60dd6f1fa0c70523f91342b07be6c82e733cdb90
 -vendor/lib/com.quicinc.cne.constants@1.0.so|0d3b2fd95e8ea3525467d8ca38865ac2a9d3f4c7
@@ -103,17 +101,17 @@ etc/firmware/DE.o.msm8976
 vendor/lib64/hw/gatekeeper.msm8952.so
 
 # GPS
-bin/garden_app
-bin/loc_launcher
-bin/xtwifi-client
-bin/xtwifi-inet-agent
-etc/permissions/com.qti.location.sdk.xml
-etc/permissions/com.qualcomm.location.xml|ee15154d1727abb16a14d89eb5e7fdc252a93f05
-etc/permissions/izat.xt.srv.xml
-framework/com.qti.location.sdk.jar
-framework/izat.xt.srv.jar
--lib64/libloc_api_v02.so
-lib64/libloc_ds_api.so
+bin/garden_app:vendor/bin/garden_app
+bin/loc_launcher:vendor/bin/loc_launcher
+bin/xtwifi-client:vendor/bin/xtwifi-client
+bin/xtwifi-inet-agent:vendor/bin/xtwifi-inet-agent
+etc/permissions/com.qti.location.sdk.xml:vendor/etc/permissions/com.qti.location.sdk.xml|0b0fa5ed38c2136cfc4d09f0fbed2e912919f5d4
+etc/permissions/com.qualcomm.location.xml:vendor/etc/permissions/com.qualcomm.location.xml|ee15154d1727abb16a14d89eb5e7fdc252a93f05
+etc/permissions/izat.xt.srv.xml:vendor/etc/permissions/izat.xt.srv.xml|01f64eaadadddaedca2414e09f16129256ac298e
+framework/com.qti.location.sdk.jar:vendor/framework/com.qti.location.sdk.jar
+framework/izat.xt.srv.jar:vendor/framework/izat.xt.srv.jar
+-lib64/libloc_api_v02.so:vendor/lib64/libloc_api_v02.so
+lib64/libloc_ds_api.so:vendor/lib64/libloc_ds_api.so
 vendor/lib64/hw/flp.default.so
 vendor/lib64/libalarmservice_jni.so
 vendor/lib64/libasn1cper.so
@@ -155,7 +153,7 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libllvm-qgl.so
 vendor/lib64/libmm-disp-apis.so
-vendor/lib64/libmm-qdcm.so
+vendor/lib64/libmm-qdcm.so|59800c8833adf8fca6369bd08dfd16d6787f09c4
 vendor/lib64/libOpenCL.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
@@ -189,22 +187,22 @@ vendor/lib/libsd_sdk_display.so
 vendor/lib/libscale.so
 
 # Graphics firmware
-etc/firmware/a530_pfp.fw
-etc/firmware/a530_pm4.fw
+etc/firmware/a530_pfp.fw:vendor/firmware/a530_pfp.fw
+etc/firmware/a530_pm4.fw:vendor/firmware/a530_pm4.fw
 
 # Keystore
 vendor/lib64/hw/keystore.msm8952.so
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.msm8952.so
+vendor/lib/hw/sound_trigger.primary.msm8952.so|b6b99480ae99f65fe28f3a8fca0350a3a53bb5a1
 vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
 
 # Media
-lib64/libOmxVpp.so
-lib64/libvpplibrary.so
-lib/libOmxVpp.so
-lib/libvpplibrary.so
+lib64/libOmxVpp.so:vendor/lib64/libOmxVpp.so
+lib64/libvpplibrary.so:vendor/lib64/libvpplibrary.so
+lib/libOmxVpp.so:vendor/lib/libOmxVpp.so
+lib/libvpplibrary.so:vendor/lib/libvpplibrary.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libI420colorconvert.so
@@ -243,20 +241,20 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 
 # Media firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
-etc/firmware/venus-v1.b00
-etc/firmware/venus-v1.b01
-etc/firmware/venus-v1.b02
-etc/firmware/venus-v1.b03
-etc/firmware/venus-v1.b04
-etc/firmware/venus-v1.mbn
-etc/firmware/venus-v1.mdt
+etc/firmware/venus.b00:vendor/firmware/venus.b00
+etc/firmware/venus.b01:vendor/firmware/venus.b01
+etc/firmware/venus.b02:vendor/firmware/venus.b02
+etc/firmware/venus.b03:vendor/firmware/venus.b03
+etc/firmware/venus.b04:vendor/firmware/venus.b04
+etc/firmware/venus.mbn:vendor/firmware/venus.mbn
+etc/firmware/venus.mdt:vendor/firmware/venus.mdt
+etc/firmware/venus-v1.b00:vendor/firmware/venus-v1.b00
+etc/firmware/venus-v1.b01:vendor/firmware/venus-v1.b01
+etc/firmware/venus-v1.b02:vendor/firmware/venus-v1.b02
+etc/firmware/venus-v1.b03:vendor/firmware/venus-v1.b03
+etc/firmware/venus-v1.b04:vendor/firmware/venus-v1.b04
+etc/firmware/venus-v1.mbn:vendor/firmware/venus-v1.mbn
+etc/firmware/venus-v1.mdt:vendor/firmware/venus-v1.mdt
 
 # Network
 -priv-app/QtiTetherService/QtiTetherService.apk
@@ -266,21 +264,20 @@ vendor/lib/libQtiTether.so
 vendor/lib/libconnctrl.so
 
 # Perf
-bin/msm_irqbalance
+bin/msm_irqbalance:vendor/bin/msm_irqbalance
 vendor/bin/perfd
 vendor/lib64/libqti-perfd-client.so
 vendor/lib/libqti-perfd-client.so
 
 # Peripheral manager
-bin/pm-proxy
-bin/pm-service
+bin/pm-proxy:vendor/bin/pm-proxy
+bin/pm-service:vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 vendor/lib/libperipheral_client.so
 
 # Postprocessing
-bin/displayfeature
-etc/permissions/com.qti.snapdragon.sdk.display.xml
-framework/com.qti.snapdragon.sdk.display.jar
+etc/permissions/com.qti.snapdragon.sdk.display.xml:vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml
+framework/com.qti.snapdragon.sdk.display.jar:vendor/framework/com.qti.snapdragon.sdk.display.jar|cfd953a85fee62c3dc5532977f2c3ddacb3df3be
 -vendor/app/colorservice/colorservice.apk
 vendor/bin/mm-pp-daemon
 vendor/lib64/libdisp-aba.so
@@ -291,13 +288,12 @@ vendor/lib64/libmm-qdcm.so
 vendor/lib/libmm-als.so
 
 # Radio - IMS
-bin/ims_rtp_daemon
-bin/imscmservice
-bin/imsdatadaemon
-bin/imsqmidaemon
-etc/permissions/imscm.xml
-framework/imscmlibrary.jar
-framework/rcsimssettings.jar
+bin/ims_rtp_daemon:vendor/bin/ims_rtp_daemon
+bin/imscmservice:vendor/bin/imscmservice
+bin/imsdatadaemon:vendor/bin/imsdatadaemon
+bin/imsqmidaemon:vendor/bin/imsqmidaemon
+etc/permissions/imscm.xml:vendor/etc/permissions/imscm.xml|4743548a7cbb8ef9dcb5e79225df78b2db2fcdfd
+framework/imscmlibrary.jar:vendor/framework/imscmlibrary.jar
 -vendor/app/ims/ims.apk
 -vendor/app/imssettings/imssettings.apk
 vendor/lib64/lib-dplmedia.so
@@ -325,7 +321,7 @@ vendor/lib64/librcc.so
 vendor/lib64/libvoice-svc.so
 
 # Sensors
-bin/sensors.qcom
+bin/sensors.qcom:vendor/bin/sensors.qcom
 vendor/lib64/hw/activity_recognition.msm8952.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
@@ -340,9 +336,9 @@ vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 
 # Thermal
-etc/thermal-engine-8956.conf
-etc/thermal-engine-8976.conf
-vendor/bin/thermal-engine
+etc/thermal-engine-8956.conf:vendor/etc/thermal-engine-8956.conf
+etc/thermal-engine-8976.conf:vendor/etc/thermal-engine-8976.conf
+vendor/bin/thermal-engine|764757153bd504ea67774cd242e0f666cc83ba06
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 -vendor/lib/libthermalclient.so

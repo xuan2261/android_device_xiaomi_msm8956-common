@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/vendor/bin/sh
 # Copyright (c) 2009-2015, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -52,7 +52,7 @@ start_sensors()
 
 start_msm_irqbalance_8952()
 {
-	if [ -f /system/bin/msm_irqbalance ]; then
+	if [ -f /vendor/bin/msm_irqbalance ]; then
 		case "$platformid" in
 		    "239" | "241" | "263" | "264" | "268" | "269" | "270" | "271")
 			start msm_irqbalance;;
