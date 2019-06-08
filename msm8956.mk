@@ -128,8 +128,7 @@ PRODUCT_PACKAGES += \
 
 # Consumerir
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    consumerir.msm8952
+    android.hardware.ir@1.0-service.xiaomi_msm8956
 
 # DataServices
 PRODUCT_PACKAGES += \
