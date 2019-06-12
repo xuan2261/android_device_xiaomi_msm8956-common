@@ -204,9 +204,6 @@ PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := caf
 TARGET_USES_OLD_MNC_FORMAT := true
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2018-07-01
-
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
