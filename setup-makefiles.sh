@@ -37,7 +37,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$MK_ROOT" true
 
 # Copyright headers and guards
-write_headers "kenzo hydrogen"
+write_headers "helium kenzo hydrogen"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
