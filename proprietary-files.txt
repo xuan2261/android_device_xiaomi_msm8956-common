@@ -284,13 +284,5 @@ vendor/lib/libsensor_user_cal.so
 vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 
-# Thermal
-etc/thermal-engine-8956.conf:vendor/etc/thermal-engine-8956.conf
-etc/thermal-engine-8976.conf:vendor/etc/thermal-engine-8976.conf
-vendor/bin/thermal-engine|764757153bd504ea67774cd242e0f666cc83ba06
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
--vendor/lib/libthermalclient.so
-
 # WideVine - from bullhead
 vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
