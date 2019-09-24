@@ -77,6 +77,7 @@ media.msm8956hw=1
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
 persist.media.treble_omx=false
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
