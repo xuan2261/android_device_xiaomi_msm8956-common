@@ -6,3 +6,14 @@
 
 # IR Blaster
 /dev/lirc[0-9]*                                                       u:object_r:lirc_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service-custom       u:object_r:hal_ir_default_exec:s0
+
+# Fingerprint
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service-custom u:object_r:hal_fingerprint_default_exec:s0
+
+# HALs
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_8956      u:object_r:hal_lineage_touch_default_exec:s0
+
+/firmware(/.*)?            u:object_r:firmware_file:s0
+/cust(/.*)?                 u:object_r:tmp_root_mount_file:s0
+
